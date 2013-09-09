@@ -11,7 +11,7 @@ $(document).ready(function () {
             if (e.which == 74) {
                 if (postNumber < postArray.length - 1) {
                     if (onPost == true && 
-                       $(window).scrollTop() + $(window).height() != $(document).height()
+                       $(window).scrollTop() + $(window).height() != $(document).height())
                        //$(document).height() - $(".post").eq(postNumber + 1).position().top >= $(window).height()) {
                         {   
                         postNumber = postNumber + 1;
