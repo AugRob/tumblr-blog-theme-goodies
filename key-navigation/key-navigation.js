@@ -10,7 +10,9 @@ $(document).ready(function () {
             //Press 'J'
             if (e.which == 74) {
                 if (postNumber < postArray.length - 1) {
-                    if (onPost == true) {
+                    if (onPost == true && 
+                       $(document).height() - $(".post").eq(postNumber + 1).position().top >= $(window).height()) {
+                           
                         postNumber = postNumber + 1;
                         $("html").animate({scrollTop: $(".post").eq(postNumber).position().top + postMargin}, postDelay);
                     } else {
