@@ -10,10 +10,7 @@ $(document).ready(function () {
             //Press 'J'
             if (e.which == 74) {
                 if (postNumber < postArray.length - 1) {
-                    if (onPost == true && 
-                       $(window).scrollTop() + $(window).height() != $(document).height())
-                       //$(document).height() - $(".post").eq(postNumber + 1).position().top >= $(window).height()) {
-                        {   
+                    if (onPost == true && $(window).scrollTop() + $(window).height() != $(document).height()) {   
                         postNumber = postNumber + 1;
                         $("html").animate({scrollTop: $(".post").eq(postNumber).position().top + postMargin}, postDelay);
                     } else {
@@ -43,13 +40,4 @@ $(document).ready(function () {
         }
         $(".counter").text(postNumber + " " + onPost);
     });
-    //Reset
-    /*$(window).on('scroll', function () {
-if (postNumber > 0) {
-if ($(window).scrollTop($(".post").eq(postNumber).position().top) != $(window).scrollTop()) {
-onPost = false;
-postNumber = 0;
-}
-}
-});*/
 });
