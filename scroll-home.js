@@ -1,3 +1,5 @@
 $(document).ready(function () {
-  $(document.body.createElement('div'));
+  $(document.createElement('div'));
+
+  
 });
