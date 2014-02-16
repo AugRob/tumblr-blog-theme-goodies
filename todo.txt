@@ -1,0 +1,14 @@
+Key-Navigation
+--(a) make html/css file with .post divs for testing
+--(b) add left/right page navigation like dashboard
+
+
+
+Scroll-home
+--(a) create the damn thing [a simple neutral-looking div to scroll the window to the top; like the dashboard]
+--(b) ?or hell, maybe scrap altogether?
+
+
+
+Other
+--() what else?
